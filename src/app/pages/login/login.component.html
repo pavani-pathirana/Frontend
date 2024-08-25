@@ -12,5 +12,7 @@
     <button type="submit" [disabled]="loginForm.invalid">Login</button>
   </form>
   <a href="#" (click)="onForgotPassword()">Forgot Password?</a>
-  <p>Don't have an account? <a href="#" (click)="onSignUp()">Sign Up</a></p>
+  <p>Don't have an account? <a [routerLink]="['/register']">Register</a>
+  </p>
+  
 </div>
